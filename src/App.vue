@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header/>
-    <Main/>
+    <Header v-bind:logo="logo"/>
+    <Main v-bind:main="main"/>
     <About/>
     <Services/>
   </div>
@@ -13,6 +13,8 @@ import Main from './components/Main.vue'
 import About from './components/About.vue'
 import Services from './components/Services.vue'
 
+
+
 export default {
   name: 'App',
   components: {
@@ -20,6 +22,14 @@ export default {
     Main,
     About,
     Services,
+
+
+  },
+  data(){
+    return{
+      "main":"Hello welcome to my app",
+      "logo":"Hello"
+    }
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="intro" id="home">
-            <h1>Hello to my Vue App</h1>
+            <h1>{{main}}</h1>
         </div>
     </main>
 </template>
@@ -9,6 +9,7 @@
 <script>
 export default{
     name:'Main',
+    props:["main"]
 }
 
 

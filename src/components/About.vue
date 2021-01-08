@@ -4,14 +4,19 @@
             <img src="../assets/logo.png" alt="Vue logo">
         </div>
         <div class="right">
-             <h3>Vue JS is a very good framework.</h3>
+             <h3>{{msg}}</h3>
         </div>
     </section>
 </template>
 
 <script>
 export default {
-    name:'About'
+    name:'About',
+    data(){
+        return{
+            "msg":"Vue is awesome",
+        }
+    }
 }
 </script>
 
@@ -20,7 +25,7 @@ export default {
         min-height: 100vh;
         display: flex;
         justify-content: space-between;
-        background:repeating-linear-gradient(24deg, rgb(7, 112, 218), dodgerblue);
+        background:repeating-linear-gradient(24deg,black, rgb(87, 194, 105));
     }
     .left{
         width: 40%;

@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="logo">
-            <h1>My App</h1>
+            <h1>{{logo}}</h1>
         </div>
         <div class="nav-items">
             <a href="#">Home</a>
@@ -14,7 +14,8 @@
 
 <script>
 export default {
-    name:'Header', 
+    name:'Header',
+    props:["logo"] 
 }
 </script>
 
